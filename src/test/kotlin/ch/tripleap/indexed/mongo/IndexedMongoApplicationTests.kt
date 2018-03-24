@@ -1,4 +1,4 @@
-package ch.tripleap.kotlinsample
+package ch.tripleap.indexed.mongo
 
 import junit.framework.Assert.assertNotNull
 import junit.framework.Assert.assertTrue
@@ -20,7 +20,7 @@ class IndexedMongoApplicationTests {
 	fun contextLoads() {
 		val street = Street("4658")
 		mongoTemplate.save(street)
-		val result = mongoTemplate.findAll(Class.forName("ch.tripleap.kotlinsample.Street"))
+		val result = mongoTemplate.findAll(Class.forName("ch.tripleap.indexed.mongo.Street"))
         assertNotNull(result)
         assertTrue(mongoTemplate.indexOps("streets").indexInfo.size == 2)
 	}

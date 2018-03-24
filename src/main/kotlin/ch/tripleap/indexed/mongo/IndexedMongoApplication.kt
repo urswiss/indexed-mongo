@@ -1,11 +1,11 @@
-package ch.tripleap.kotlinsample
+package ch.tripleap.indexed.mongo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class KotlinSampleApplication
+class IndexMongoApplication
 
 fun main(args: Array<String>) {
-    runApplication<KotlinSampleApplication>(*args)
+    runApplication<IndexMongoApplication>(*args)
 }
